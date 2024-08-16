@@ -249,6 +249,18 @@ footer p {
 
 /*MEDIA ADJUST SCREEN */
 
+@media (max-width: 480px){
+  .card-section.card-1 img{
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px){
+  .card-section.card-1 img{
+    padding-bottom: 10px;
+  }
+}
+
 @media (max-width: 768px) {
   /* Ajustes para imagens */
   .card-section.card-1 img,
