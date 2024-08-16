@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-headline: #e1624f;
+  --background-color: #f5f4f0;
+  --paragraph-color: #333333;
+  --border-primary: #d9d9d9;
+  --ul-color: #0c51a7;
+  --first-li: #591b98;
+  --second-li: #e5245e;
+  --third-li: #e95e10;
+  --h3-font-size: 28px;
+  --paragraph-font-size: 16px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  background-color: var(--background-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  margin: auto;
+}
+
+.card-section.card-1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.card-section.card-1 p:first-child {
+  color: var(--text-headline);
+  font-weight: bold;
+  padding-left: 4px;
+  text-align: left;
+}
+
+.card-section.card-1 h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.card-section.card-1 img {
+  height: 660px;
+  width: 100%;
+  max-width: 1200px;
+  max-height: 660px;
+  margin: 0px 0px 25px 0px;
+  border-radius: 28px;
+}
+
+.card-section.card-1 #card-turistic {
+  height: 350px;
+  border-radius: 28px;
+}
+
+.card-section.card-1 .photo-context-description {
+  width: 100%;
+  color: var(--paragraph-color);
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.card-section.card-1 .photo-context-description::after {
+  display: flex;
+  content: "";
+  position: absolute;
+  border: 0.1px solid var(--border-primary);
+  width: 100%;
+  margin-top: 40px;
+  border-radius: 5px;
+}
+
+/* AQUI COMEÇA O CARD 2 */
+
+.card-section.card-2 p:first-of-type {
+  margin: 70px 0 10px 0;
+  font-weight: bold;
+  color: var(--text-headline);
+}
+
+.card-section.card-2 h2 {
+  padding-bottom: 8px;
+}
+
+/* IMAGEM DO CARD */
+.card-section.card-2 .card-turistic {
+  max-height: 350px;
+  width: 100%;
+  border-radius: 28px;
+}
+
+.card-section.card-2 h2 {
+  font-size: 32px;
+}
+
+.card-section.card-2 .card-description {
+  color: var(--paragraph-color);
+  font-size: var(--paragraph-font-size);
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 64px;
+  width: 100%;
+  padding-right: 60px;
+  line-height: 1.5;
+}
+
+.card-section.card-2 h3 {
+  padding: 10px 0 10px 9px;
+  font-size: var(--h3-font-size);
+}
+
+.card-section.card-2 .content-card p {
+  color: var(--paragraph-color);
+  font-weight: bold;
+  height: 13px;
+  margin: 20px 0 8px 0;
+}
+
+.card-section.card-2 .content-card ul {
+  padding-left: 25px;
+}
+
+.card-section.card-2 .content-card li::marker {
+  color: var(--paragraph-color);
+  font-size: 12px;
+}
+
+.card-section.card-2 li {
+  color: var(--ul-color);
+  font-weight: bold;
+  font-size: var(--paragraph-font-size);
+  line-height: 1.2;
+}
+/* AQUI COMEÇA O CARD 3 */
+
+/* IMAGEM DO CARD */
+.card-section.card-3 .card-turistic {
+  max-height: 350px;
+  margin-top: 48px;
+  width: 100%;
+  border-radius: 28px;
+}
+
+.card-section.card-3 h2 {
+  font-size: 32px;
+}
+
+.card-section.card-3 .card-description {
+  color: var(--paragraph-color);
+  font-size: var(--paragraph-font-size);
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 64px;
+  width: 100%;
+  padding-right: 60px;
+  line-height: 1.5;
+}
+
+.card-section.card-3 h3 {
+  padding: 10px 0 10px 9px;
+  font-size: var(--h3-font-size);
+}
+
+.card-section.card-3 .content-card p {
+  color: var(--paragraph-color);
+  font-weight: bold;
+  height: 13px;
+  margin: 20px 0 8px 0;
+}
+
+.card-section.card-3 .content-card ul {
+  padding-left: 25px;
+}
+
+.card-section.card-3 .content-card li::marker {
+  color: var(--paragraph-color);
+  font-size: 12px;
+}
+
+.card-section.card-3 > .content-card .second {
+  color: var(--ul-color);
+  font-weight: bold;
+  font-size: var(--paragraph-font-size);
+  line-height: 1.2;
+}
+
+.card-section.card-3 > .content-card .first-item {
+  color: var(--first-li);
+  font-weight: bold;
+  font-size: var(--paragraph-font-size);
+  line-height: 1.2;
+}
+
+.card-section.card-3 .content-card li:nth-child(2) {
+  color: var(--second-li);
+  font-weight: bold;
+  font-size: var(--paragraph-font-size);
+  line-height: 1.2;
+}
+
+.card-section.card-3 .content-card li:nth-child(3) {
+  color: var(--third-li);
+  font-weight: bold;
+  font-size: var(--paragraph-font-size);
+  line-height: 1.2;
+}
+
+footer::before {
+  display: flex;
+  content: "";
+  position: absolute;
+  border: 0.1px solid var(--border-primary);
+  width: 100%;
+  border-radius: 5px;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 40px auto;
+}
+
+footer p{
+  font-size: var(--paragraph-font-size);
+  color: var(--paragraph-color);
+  margin: auto;
+  margin-top: 40px;
+  width: 100%;
+}
