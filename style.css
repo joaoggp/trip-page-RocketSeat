@@ -238,10 +238,30 @@ footer {
   margin: 40px auto;
 }
 
-footer p{
+footer p {
   font-size: var(--paragraph-font-size);
   color: var(--paragraph-color);
   margin: auto;
   margin-top: 40px;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .card-section.card-1 img {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-section.card-1 img {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+    border-radius: 15px;
+  }
 }
